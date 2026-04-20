@@ -1,0 +1,7 @@
+=== HASTANE VERİ TEMİZLEME VE ETL RAPORU ===
+Aşama 1: Ham hasta dosyası yüklendi. İşlem görecek kayıt: 5110
+Aşama 2 (Silme): Çöplük niteliğindeki Sigorta_Gereksiz kolonu ve referans olan Hasta_ID veriden tamamen silindi.
+Aşama 2 (Düzeltme): Model eğitimini bozan 409 kayıp Yaş ve 201 kayıp Vücut Kitle Endeksi başarıyla onarıldı.
+Aşama 2 (Standardizasyon): Dağınık girilen Cinsiyet ibareleri (büyük/küçük harf, gereksiz boşluk) tek formata dönüştürüldü.
+Son Durum: Veritabanına aktırılacak temiz kayıt adedi: 5110
+Aşama 3 (Yükleme): Tüm işlemler tamamlandı. Veriler yeni oluşturulan './Hastane_Temiz_Veri.db' sunucusuna başarıyla taşındı.
